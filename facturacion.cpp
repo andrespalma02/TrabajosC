@@ -42,7 +42,7 @@ int main() {
         switch (opReporte) {
             case 1:
                 cout << "Los clientes con factura en estado MOROSO son:" <<
-                     "(En caso de no aparecer nombres, no hay clientes con facturas en ese estado)\n";
+                     "(En caso de no aparecer nombres, no hay clientes con facturas en ese estado)"<<"\n";
                 for (int i = 0; i < indiceFactura; i++) {
 
                     if (strcmp(facturaCliente[i].estadoFactura, "MOROSO") == 0) {
@@ -61,7 +61,7 @@ int main() {
                 cout << "Los clientes con factura en estado PAGADO y con valores mayores a" << maxPagado << " son:\n"
                      <<
                      "(En caso de no aparecer nombres, no hay clientes con facturas en ese estado, o son menores a "
-                     << maxPagado << ")";
+                     << maxPagado << ")\n";
                 for (int i = 0; i < indiceFactura; i++) {
                     precioFactura = facturaCliente[i].precioUnitario *
                                     facturaCliente[i].unidadesSolicitadas;
@@ -89,4 +89,3 @@ int main() {
     cout << "\nGracias por usar el programa!";
     return 0;
 }
-
